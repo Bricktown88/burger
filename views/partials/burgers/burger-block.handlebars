@@ -1,0 +1,13 @@
+
+	<ul class="uneaten-burgers" data-id="{{id}}" data-devoured="{{devoured}}">
+		{{#unless devoured}}
+        <li>{{{ burger_name }}} <button class="eat-burger" data-id="{{this.id}}">EAT ME!</button></li>
+        {{/unless}}
+	</ul>
+
+
+	<ul class="eaten-burgers" data-id="{{id}}" data-devoured="{{devoured}}">
+		{{#if devoured}}
+        <li>{{{ burger_name }}} <button class="delete-burger" data-id="{{this.id}}">DELETE!</button></li>
+        {{/if}}
+	</ul>

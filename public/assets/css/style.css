@@ -1,0 +1,8 @@
+[data-id="burgerImage"] {
+    width: 300px;
+}
+
+.eaten-burgers {
+    color: red;
+    text-decoration: line-through;
+}
